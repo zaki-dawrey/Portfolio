@@ -1,46 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Zaki Dawrey</title>
-        <link rel="stylesheet" href="css/main.css" />
-    </head>
-    <body class="bg-gray-900">
-        <nav class="relative container mx-auto p-6">
-            <!-- Flex container -->
-            <div class="flex items-center justify-between">
-                <!-- Logo -->
-                <div class="pt-3">
-                    <a href="#" class=" text-white text-2xl font-mono"
-                        >Zaki Dawrey</a
-                    >
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Zaki Dawrey</title>
+  </head>
+  <body class="bg-gradient-to-b from-gray-900 via-dark-900 to-black">
+    <nav class="relative container mx-auto p-6">
+      <!-- Flex container -->
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="pt-0">
+          <a href="#" class="text-white text-2xl font-mono p-2 ">Zaki Dawrey</a>
+        </div>
+        <!-- Menu Items -->
+        <div class="hidden px-5 space-x-16 md:flex">
+          <a
+            href="#"
+            class="p-3 px-4 pt-3 rounded-md text-white font-mono"
+            >About</a
+          >
+          <a
+            href="#"
+            class="p-3 px-4 pt-3 rounded-md text-white font-mono"
+            >Experience</a
+          >
+          <a
+            href="#"
+            class="p-3 px-4 pt-3 rounded-md text-white font-mono"
+            >Projects</a
+          >
+          <a
+            href="#"
+            class="p-3 px-4 pt-3 rounded-md text-white font-mono"
+            >Contact</a
+          >
+        </div>
+
+        <!-- <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none "
+        >
+          <span class="hamburger-top "></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div> -->
+ 
+          <div>
+            <button id="menu-btn" class="relative group  md:hidden focus:outline-none">
+              <div class="relative flex items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-slate-700 ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
+                <div class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 group-focus:-rotate-[45deg] origin-center">
+                  <div class="bg-white h-[2px] w-1/2 rounded transform transition-all duration-300 group-focus:-rotate-90 group-focus:h-[1px] origin-right delay-75 group-focus:-translate-y-[1px]"></div>
+                  <div class="bg-white h-[1px] rounded"></div>
+                  <div class="bg-white h-[2px] w-1/2 rounded self-end transform transition-all duration-300 group-focus:-rotate-90 group-focus:h-[1px] origin-left delay-75 group-focus:translate-y-[1px]"></div>
                 </div>
-                <!-- Menu Items -->
-                <div class="hidden space-x-6 md:flex">
-                    <a
-                        href="#"
-                        class="p-2 px-4 pt-2 rounded-md text-white font-mono hover:bg-black hover:text-green-700"
-                        >About</a
-                    >
-                    <a
-                        href="#"
-                        class="p-2 px-4 pt-2 rounded-md text-white font-mono hover:bg-black hover:text-green-700"
-                        >Experience</a
-                    >
-                    <a
-                        href="#"
-                        class="p-2 px-4 pt-2 rounded-md text-white font-mono hover:bg-black hover:text-green-700"
-                        >Projects</a
-                    >
-                </div>
-                <!-- Button -->
-                <a
-                    href="#"
-                    class="hidden p-2 px-4 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block font-mono hover:bg-black hover:text-green-700"
-                    >Contact</a
-                >
-            </div>
-        </nav>
-    </body>
+              </div>
+            </button>
+          </div>
+
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="#">About</a>
+          <a href="#">Experience</a>
+          <a href="#">Projects</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="flex items-center justify-center h-screen bg-gradient-to-br ">
+        <div class="backdrop-blur-sm bg-white/30 font-semibold text-center rounded-3xl border shadow-lg p-10 max-w-xs">
+          <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto" src="/img/pp.jpg" alt="product designer">
+          <h1 class="text-lg text-white"> Zaki Dawrey</h1>
+          <h3 class="text-sm text-gray-200 "> Software Developer </h3>
+          <p class="text-xs text-gray-200 mt-4"> I am a software engineer with a strong passion for app development and backend solutions </p>
+          <button class="bg-gray-900 px-8 py-2 mt-8 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide">Hire Me</button>
+        </div>
+      </div>
+
+    <script src="/script.js"></script>
+  </body>
 </html>
